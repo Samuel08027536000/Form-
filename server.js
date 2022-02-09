@@ -26,7 +26,7 @@ app.use(express.static('public'))
 app.use('/api/students',routes);
 app.set('view engine','ejs');
 
-app.get('/home',(req,res)=>{
+app.get('/',(req,res)=>{
     res.render('index');
 })
 
